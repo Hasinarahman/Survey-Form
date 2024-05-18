@@ -29,7 +29,7 @@ fieldset {
 
 fieldset:last-of-type {
   border-bottom: none;
-} 
+}
 
 label {
   display: block;
@@ -44,7 +44,7 @@ select {
   min-height: 2em;
 }
 
-input, 
+input,
 textarea {
   background-color: #0a0a23;
   border: 1px solid #0a0a23;
@@ -76,5 +76,3 @@ input[type="file"] {
 a {
   color: #dfdfe2;
 }
-
-  
