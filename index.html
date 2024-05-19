@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Survey Form</h1>
-    <p>Please fill out this form with the required information.</p>
-    <form method="post">
-            <label for="First Name"> Enter your first name:
-                <input id="first-name" name="first-name" type="text" required />
+    <h1 id="title">Survey Form</h1>
+    <p id ="description">Please fill out this form with the required information.</p>
+    <form id="survey-form">
+            <label id="name-label" placeholder="your name here"> Enter your first name:
+                <input id="name" name="first-name" type="text" placeholder="Ahmad" required />
             </label>
-            <label for="Last Name"> Enter your last name:
-                <input id="last-name" name="last-name" type="text" required />
+            <label id="lastname-label"> Enter your last name:
+                <input id="last-name" name="last-name" type="text" placeholder="Rahemi" required />
             </label>
-            <label for="Email"> Enter your Email address:
-                <input id="email" name="email" type="email" required />
+            <label id="email-label"> Enter your Email address:
+                <input id="email" name="email" type="email" placeholder="hhhh123@gmail.com" required />
             </label>
-            <label for="password"> Enter your password:
-                <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required />
+            <label id="number-label"> Enter your age:
+                <input id="number" name="new-password" type="number" min="50"  max="16" placeholder="22" />
             </label>
 
             <fieldset>
                 <legend>Gender (required)</legend>
-                <label for="Male"><input id="Male" type="radio" name="male-type" class="inline" checked /> Male</label>
-                <label for="F/male"><input id="F/male" type="radio" name="F/male-type" class="inline" /> F/male</label>
+                <label id="Male" >
+                  <input id="Male" type="radio" name="gender" value="male" class="inline"  /> Male</label>
+                <label for="F/male"><input id="F/male" type="radio" name="gender" value="fmale" class="inline" checked /> F/male</label>
+                
               </fieldset>
 
               <fieldset>
+                
                 <label for="ID Card">Upload your ID Card or Passport <input id="ID Card" type="file" name="file" /></label>
                 <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
                 <label for="referrer"> which computer skill do you have?
-                  <select id="referrer" name="referrer">
+                  <select id="dropdown" name="referrer">
                     <option value="">(select one)</option>
                     <option value="1">Office</option>
                     <option value="2">Windows</option>
@@ -49,10 +52,14 @@
               </fieldset>
 
               <label for="terms-and-conditions">
-                <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+                <input  value="rules" class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+              </label>
+              <label for="terms-and-conditions">
+                <input  value="rules"class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I read all of your rules.</a>
               </label>
 
-              <input type="submit" value="Submit" />
+
+              <input id="submit" type="submit" value="Submit" />
             </form>
 
 </body>
