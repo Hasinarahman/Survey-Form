@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id ="description">Please fill out this form with the required information.</p>
+    <form id="survey-form">
+            <label id="name-label" placeholder="your name here"> Enter your first name:
+                <input id="name" name="first-name" type="text" placeholder="Ahmad" required />
+            </label>
+            <label id="lastname-label"> Enter your last name:
+                <input id="last-name" name="last-name" type="text" placeholder="Rahemi" required />
+            </label>
+            <label id="email-label"> Enter your Email address:
+                <input id="email" name="email" type="email" placeholder="hhhh123@gmail.com" required />
+            </label>
+            <label id="number-label"> Enter your age:
+                <input id="number" name="new-password" type="number" min="50"  max="16" placeholder="22" />
+            </label>
+
+            <fieldset>
+                <legend>Gender (required)</legend>
+                <label id="Male" >
+                  <input id="Male" type="radio" name="gender" value="male" class="inline"  /> Male</label>
+                <label for="F/male"><input id="F/male" type="radio" name="gender" value="fmale" class="inline" checked /> F/male</label>
+                
+              </fieldset>
+
+              <fieldset>
+                
+                <label for="ID Card">Upload your ID Card or Passport <input id="ID Card" type="file" name="file" /></label>
+                <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+                <label for="referrer"> which computer skill do you have?
+                  <select id="dropdown" name="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">Office</option>
+                    <option value="2">Windows</option>
+                    <option value="3">Illustrator</option>
+                    <option value="4">Photoshop</option>
+                    <option value="5">Typing</option>
+                    <option value="6">Other</option>
+                  </select>
+                </label>
+                <label for="bio">Provide a bio:
+                  <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+                </label>
+              </fieldset>
+
+              <label for="terms-and-conditions">
+                <input  value="rules" class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+              </label>
+              <label for="terms-and-conditions">
+                <input  value="rules"class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I read all of your rules.</a>
+              </label>
+
+
+              <input id="submit" type="submit" value="Submit" />
+            </form>
+
+</body>
+</html>
